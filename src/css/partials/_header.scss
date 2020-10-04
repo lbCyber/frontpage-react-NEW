@@ -1,0 +1,53 @@
+.centerHeaderItems {
+  display: flex;
+  width: 1000px;
+  height: 300px;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  border: 3px solid $lightBlue;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #333A;
+  margin:0 auto;
+  h2 {
+    z-index: 5;
+  }
+}
+
+.myPicContainer {
+  margin-right: 50px;
+  position: relative;
+  border-radius: 0 350px 0 0;
+  background-color: $lightBlue;
+  img {
+    width: 88%;
+  }
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: 500px;
+  line-height: 90px;
+  h1,
+  h2 {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+}
+
+// .backgroundStyle {
+//   position: absolute;
+//   z-index: -1;
+//   width: 100%;
+//   height: 100%;
+//   background-image: linear-gradient(-25deg, $darkGrey 0% 27.85%, transparent 28% 100%), linear-gradient(-65deg, $darkSlate 0% 29.85%, transparent 30% 100%), linear-gradient(-80deg, rgba(163, 178, 196, 0.45) 0% 34.85%, transparent 35% 100%), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+//   background-repeat: no-repeat;
+//   background-size: 100%;
+//   opacity: 0.5;
+// }

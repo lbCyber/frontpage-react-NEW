@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Nav extends Component {
   constructor(props) {
@@ -8,6 +9,8 @@ class Nav extends Component {
     }
   }
 
+  links = [["home", "/"], ["bio", "/bio"], ["skills", "/skills"], ["work", "/work"], ["contact", "/contact"]]
+
   componentDidMount() {
 
   }
@@ -16,11 +19,17 @@ class Nav extends Component {
     return (
       <React.Fragment>
         <ul>
-          <li>home</li>
-          <li>bio</li>
-          <li>skills</li>
-          <li>work</li>
-          <li>contact</li>
+          {
+            this.links.map((page, key) => {
+              return (
+                !(this.props.currentPage===key) ?
+                  <Link onClick={()=>this.props.callBack(key)} to={page[1]} key={key}>
+                    <li>{page[0]}</li>
+                  </Link> :
+                  null
+              )
+            })
+          }
         </ul>
       </React.Fragment>
     )

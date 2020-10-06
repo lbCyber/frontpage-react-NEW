@@ -325,3 +325,31 @@ ul {
   opacity: 0;
   background-repeat: no-repeat;
   pointer-events: none; }
+
+.caret:before {
+  content: "_";
+  -webkit-animation: blink-caret 0.6s step-end infinite;
+  animation: blink-caret 0.6s step-end infinite;
+  -webkit-animation-fill-mode: none;
+  animation-fill-mode: none;
+  position: absolute;
+  left: 0px; }
+
+.caret {
+  position: absolute;
+  -webkit-animation: typing step-end infinite 20s;
+  animation: typing step-end infinite 20s; }
+
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    color: transparent; }
+  50% {
+    color: inherit; } }
+
+@keyframes blink-caret {
+  from,
+  to {
+    color: transparent; }
+  50% {
+    color: inherit; } }

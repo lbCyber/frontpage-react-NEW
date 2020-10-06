@@ -50,7 +50,7 @@ class App extends Component {
           </div>
         </Router>
         <div className="preload"> {/* prevent assets from blinking on load */}
-        <img src="./assets/meAvT.png" alt="" />
+          <img src="./assets/meAvT.png" alt="" />
           <img src="./assets/meAvTSkeletondoot.png" alt="" />
           <img src="./assets/meAvTSkeletondoot-horn.png" alt="" />
           <img src="./assets/axologosmile.svg" alt="" />

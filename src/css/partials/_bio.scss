@@ -1,3 +1,7 @@
+.paulPic {
+  position:relative;
+}
+
 .avContainer {
   position:relative;
   width: 300px;
@@ -8,6 +12,7 @@
   background-image: url("./../assets/meAvTSkeleton.png");
   background-size: 100%;
   background-position: 50%;
+  image-rendering: crisp-edges;
   img {
     opacity: 1;
     transition: opacity 0.5s;

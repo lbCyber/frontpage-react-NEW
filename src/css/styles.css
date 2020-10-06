@@ -290,6 +290,9 @@ ul {
     align-items: center;
     padding-left: 50px; }
 
+.paulPic {
+  position: relative; }
+
 .avContainer {
   position: relative;
   width: 300px;
@@ -298,7 +301,8 @@ ul {
 .paulAv {
   background-image: url("./../assets/meAvTSkeleton.png");
   background-size: 100%;
-  background-position: 50%; }
+  background-position: 50%;
+  image-rendering: crisp-edges; }
   .paulAv img {
     opacity: 1;
     -webkit-transition: opacity 0.5s;

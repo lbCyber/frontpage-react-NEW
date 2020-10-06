@@ -16,7 +16,7 @@ class App extends Component {
     }
   }
 
-  navCB = (e) => {
+  cb = (e) => {
     this.setState({ currentPage: e })
   }
 
@@ -26,33 +26,36 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div class="preload">
-          <img src="./assets/meAvSkeletondoot-horn.png" alt=""/>
-          <img src="./assets/meAvSkeletondoot.png" alt=""/>
-          <img src="./assets/axologosmile.svg" alt=""/>
+      <React.Fragment>
+        <Router>
+          <div className="wrapper">
+            <Switch>
+              <Route path="/bio">
+                <Bio callBack={this.cb} />
+              </Route>
+              <Route path="/skills">
+                <Skills callBack={this.cb} />
+              </Route>
+              <Route path="/work">
+                <Work callBack={this.cb} />
+              </Route>
+              <Route path="/contact">
+                <Contact callBack={this.cb} />
+              </Route>
+              <Route path="/">
+                <NameTag callBack={this.cb} />
+              </Route>
+            </Switch>
+            <Nav currentPage={this.state.currentPage} callBack={this.cb} />
+          </div>
+        </Router>
+        <div className="preload"> {/* prevent assets from blinking on load */}
+        <img src="./assets/meAvT.png" alt="" />
+          <img src="./assets/meAvTSkeletondoot.png" alt="" />
+          <img src="./assets/meAvTSkeletondoot-horn.png" alt="" />
+          <img src="./assets/axologosmile.svg" alt="" />
         </div>
-        <div className="wrapper">
-          <Switch>
-            <Route path="/bio">
-              <Bio />
-            </Route>
-            <Route path="/skills">
-              <Skills />
-            </Route>
-            <Route path="/work">
-              <Work />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <NameTag />
-            </Route>
-          </Switch>
-          <Nav currentPage={this.state.currentPage} callBack={this.navCB} />
-        </div>
-      </Router>
+      </React.Fragment>
     )
   }
 }

@@ -16,7 +16,7 @@ class Bio extends Component {
 
   render() {
     return (
-      <section>
+      <section classname="bioBox">
         <div className="paulPic">
           <div className="avContainer paulAv" id="paulAv">
             <img src="./assets/meAvT.png" alt="Pixel-art illustration of myself" onMouseDown={() => this.dootAudio.play()} />

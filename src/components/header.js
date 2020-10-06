@@ -2,7 +2,7 @@ import React from 'react';
 
 const NameTag = () => {
   return (
-    <div className="headerMain">
+    <section className="headerMain">
       <div className="centerHeaderItems">
         {/* <div className="backgroundStyle"></div> */}
         <div className="myPicContainer">
@@ -15,7 +15,7 @@ const NameTag = () => {
         </div>
       </div>
       <h3>And I'm a coder // developer // designer</h3>
-    </div>
+    </section>
   )
 }
 

@@ -27,6 +27,11 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <div class="preload">
+          <img src="./assets/meAvSkeletondoot-horn.png" alt=""/>
+          <img src="./assets/meAvSkeletondoot.png" alt=""/>
+          <img src="./assets/axologosmile.svg" alt=""/>
+        </div>
         <div className="wrapper">
           <Switch>
             <Route path="/bio">

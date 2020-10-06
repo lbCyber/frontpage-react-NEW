@@ -225,7 +225,15 @@ ul {
 .wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  height: 100vh; }
+
+.preload {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -9999;
+  opacity: 0; }
 
 .centerHeaderItems {
   display: -webkit-box;
@@ -281,3 +289,35 @@ ul {
     -ms-flex-align: center;
     align-items: center;
     padding-left: 50px; }
+
+.avContainer {
+  position: relative;
+  width: 300px;
+  height: 300px; }
+
+.paulAv {
+  background-image: url("./../assets/meAvTSkeleton.png");
+  background-size: 100%;
+  background-position: 50%; }
+  .paulAv img {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .paulAv img:hover {
+      opacity: 0.1;
+      -webkit-transition: opacity 2s .33s;
+      -o-transition: opacity 2s .33s;
+      transition: opacity 2s .33s; }
+  .paulAv:active {
+    background-image: url("./../assets/meAvTSkeletondoot.png"); }
+  .paulAv:active + .doot {
+    opacity: 1; }
+
+.doot {
+  position: absolute;
+  background-image: url("./../assets/meAvSkeletondoot-horn.png");
+  background-size: 100%;
+  opacity: 0;
+  background-repeat: no-repeat;
+  pointer-events: none; }

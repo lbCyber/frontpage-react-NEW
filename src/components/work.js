@@ -19,18 +19,18 @@ class Work extends Component {
 
   render() {
     return (
-      <div>
+      <section className="portfolioBox">
         {
           this.state.work.map((project, key) => {
             return (
-              <div key={key}>
-                <p>Name: {project.title}</p>
-                <img src={`./assets/${project.image}`} alt="" />
-                <p>Published: {`${this.state.months[project.published[1]]} ${project.published[2]}, ${project.published[0]}`}</p>
-                <div>
+              <div className="projectContainer" key={key}>
+                <h3 className="projectName">Name: {project.title}</h3>
+                <img className="projectBanner" src={`./assets/${project.image}`} alt="" />
+                <h4 className="projectDate">Published: {`${this.state.months[project.published[1]]} ${project.published[2]}, ${project.published[0]}`}</h4>
+                <div className="projectText">
                   <ReactMarkdown source={project.text} escapeHtml={false} />
                 </div>
-                <div>
+                <div className="projectFeaturesContainer">
                   <ul>
                     {
                       project.features.map((feature, key) => {
@@ -47,7 +47,7 @@ class Work extends Component {
             )
           })
         }
-      </div>
+      </section>
     )
   }
 }

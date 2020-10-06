@@ -17,7 +17,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <nav>
         <ul>
           {
             this.links.map((page, key) => {
@@ -31,7 +31,7 @@ class Nav extends Component {
             })
           }
         </ul>
-      </React.Fragment>
+      </nav>
     )
   }
 }

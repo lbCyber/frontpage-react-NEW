@@ -14,9 +14,9 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <section className="contactBox">
         contact
-      </div>
+      </section>
     )
   }
 }

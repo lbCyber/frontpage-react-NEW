@@ -41,3 +41,9 @@ ul {
   z-index: -9999;
   opacity: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .mobileExclude {
+    display:none;
+  }
+}

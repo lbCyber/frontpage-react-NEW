@@ -1,0 +1,31 @@
+.portfolioBox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.projectName {
+  width: 100%;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.projectBanner {
+  width: 50%;
+}
+
+.projectFeaturesContainer {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  li {
+    width: 50%;
+    text-align: center;
+  }
+}

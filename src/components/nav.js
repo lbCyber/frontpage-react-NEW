@@ -17,21 +17,28 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav>
-        <ul>
+      <nav className={(this.props.currentPage)?"navTop":null}>
+        <ul className="mainNav">
           {
             this.links.map((page, key) => {
               return (
-                !(this.props.currentPage===key) ?
-                  <Link onClick={()=>this.props.callBack(key)} to={page[1]} key={key}>
-                    <li>{page[0]}</li>
-                  </Link> :
+                !(this.props.currentPage === key) ?
+                  <React.Fragment>
+                    <Link onClick={() => this.props.callBack(key)} to={page[1]} key={key}>
+                      <li>{page[0]}</li>
+                    </Link>
+                    {(key < 3 || (key===3 && this.props.currentPage < 4)) ?
+                       // eslint-disable-next-line
+                      <span className="navSeparator">//</span> :
+                  null
+                    }
+                  </React.Fragment> :
                   null
               )
             })
           }
         </ul>
-      </nav>
+      </nav >
     )
   }
 }

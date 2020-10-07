@@ -29,23 +29,25 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <div className="wrapper">
-            <Switch>
-              <Route path="/bio">
-                <Bio callBack={this.cb} />
-              </Route>
-              <Route path="/skills">
-                <Skills callBack={this.cb} />
-              </Route>
-              <Route path="/work">
-                <Work callBack={this.cb} />
-              </Route>
-              <Route path="/contact">
-                <Contact callBack={this.cb} />
-              </Route>
-              <Route path="/">
-                <NameTag callBack={this.cb} />
-              </Route>
-            </Switch>
+            <main>
+              <Switch>
+                <Route path="/bio">
+                  <Bio callBack={this.cb} />
+                </Route>
+                <Route path="/skills">
+                  <Skills callBack={this.cb} />
+                </Route>
+                <Route path="/work">
+                  <Work callBack={this.cb} />
+                </Route>
+                <Route path="/contact">
+                  <Contact callBack={this.cb} />
+                </Route>
+                <Route path="/">
+                  <NameTag callBack={this.cb} />
+                </Route>
+              </Switch>
+            </main>
             <Nav currentPage={this.state.currentPage} callBack={this.cb} />
           </div>
         </Router>

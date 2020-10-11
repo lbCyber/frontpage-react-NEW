@@ -18,6 +18,14 @@
   width: 50%;
 }
 
+.ascSort::after {
+  content:"^"
+}
+
+.descSort::after {
+  content:"v"
+}
+
 .projectFeaturesContainer {
   ul {
     display: flex;

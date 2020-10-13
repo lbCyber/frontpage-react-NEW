@@ -1,17 +1,20 @@
 .paulPic {
   position:relative;
+  display:flex;
+  justify-content:center;
 }
 
 .avContainer {
   position:relative;
   width: 300px;
-  height: 300px;
+  height: 231px;
 }
 
 .paulAv {
   background-image: url("./../assets/meAvTSkeleton.png");
   background-size: 100%;
   background-position: 50%;
+  background-repeat:no-repeat;
   image-rendering: crisp-edges;
   img {
     opacity: 1;
@@ -24,16 +27,4 @@
   &:active {
     background-image: url("./../assets/meAvTSkeletondoot.png")
   }
-  &:active+.doot {
-    opacity: 1;
-  }
-}
-
-.doot {
-  position: absolute;
-  background-image: url("./../assets/meAvSkeletondoot-horn.png");
-  background-size: 100%;
-  opacity: 0;
-  background-repeat: no-repeat;
-  pointer-events: none
 }

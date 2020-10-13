@@ -21,7 +21,6 @@ class Bio extends Component {
           <div className="avContainer paulAv" id="paulAv">
             <img src="./assets/meAvT.png" alt="Pixel-art illustration of myself" onMouseDown={() => this.dootAudio.play()} />
           </div>
-          <div className="doot"></div>
         </div>
         <h5>Hey there!</h5>
         <p>I'm a multi-skilled front-end developer and writer based in Toronto, Canada.</p>
@@ -33,7 +32,7 @@ class Bio extends Component {
         <p>I have years of experience freelancing as a web developer for small businesses and non-profits, as well as a copy editor and writer, trading largely with local publications.</p>
         <h5 className="mobileExclude">Okay, but what else?</h5>
         <p>Having graduated from Juno's immersive front-end development program, I have become a highly-skilled and dedicated front-end developer, with a deeply-rooted love for what I do.</p>
-        <p>I have an indomitable passion for giving back to the LGBTQ community, of which I owe so much, and love working with people and working toward making the world a better place through both charity foundations and advocacy.</p>
+        <p>I have an indomitable passion for giving back to the LGBTQ+ community, of which I owe so much, and love working with people and working toward making the world a better place through both charity foundations and advocacy.</p>
         <p>Most of all, I am dedicated to growing as a person and becoming better every day, however I can. I have a genuine love of all people and will always go out of my way to provide whatever support I can for those in need.
           </p>
         <h6 className="ds">(Also I'm pretty good at Dark Souls)</h6>

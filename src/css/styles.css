@@ -1,3 +1,9 @@
+.blue {
+  color: #48a0f0; }
+
+.white {
+  color: #fff; }
+
 /*  BASE IMPORTS  */
 * {
   -moz-box-sizing: border-box;
@@ -308,7 +314,8 @@ li {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 500px;
-  line-height: 90px; }
+  line-height: 90px;
+  cursor: default; }
   .headerText h1,
   .headerText h2 {
     width: 500px;

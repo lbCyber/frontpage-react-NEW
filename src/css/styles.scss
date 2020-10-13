@@ -11,6 +11,13 @@ $lightBlue: #48a0f0; //    rgba(72, 160,240,1.000)
 $amber: #e99b36; //        rgba(233,155,54, 1.000)
 $slate: #8485af; //        rgba(132,133,175,1.000)
 
+.blue {
+  color: $lightBlue;
+}
+.white {
+  color: #fff;
+}
+
 /*  BASE IMPORTS  */
 @import "partials/normalize";
 @import "partials/main";

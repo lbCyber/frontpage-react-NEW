@@ -106,23 +106,6 @@
         "original",
         "responsive"
       ]
-    },
-    {
-      "title": "Lintbox",
-      "titleshort": "lintbox",
-      "image": "port-lb.jpg",
-      "live_site": "https://lintbox.com",
-      "git": "https://github.com/lbCyber/frontpage-react-NEW",
-      "published": [2020, 5, 8],
-      "text": "This here!",
-      "features": [
-        "accessible",
-        "react",
-        "javascript",
-        "original",
-        "JSON",
-        "responsive"
-      ]
     }
   ],
   "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],

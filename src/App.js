@@ -48,7 +48,9 @@ class App extends Component {
                 </Route>
               </Switch>
             </main>
-            <Nav currentPage={this.state.currentPage} callBack={this.cb} />
+            {(this.state.currentPage === 0) ? null :
+              <Nav currentPage={this.state.currentPage} callBack={this.cb} />
+            }
           </div>
         </Router>
         <div className="preload"> {/* prevent assets from blinking on load */}

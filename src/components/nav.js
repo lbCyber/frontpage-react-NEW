@@ -17,7 +17,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <nav className={(this.props.currentPage)?"navTop":null}>
+      <nav className="navTop">
         <ul className="mainNav">
           {
             this.links.map((page, key) => {
